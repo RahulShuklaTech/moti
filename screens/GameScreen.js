@@ -1,8 +1,8 @@
 import React from 'react';
 import { ScreenContainer } from '@draftbit/ui';
 
-const ProfileScreen = props => {
+const GameScreen = props => {
   return <ScreenContainer />;
 };
 
-export default ProfileScreen;
+export default GameScreen;

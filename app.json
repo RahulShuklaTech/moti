@@ -1,21 +1,22 @@
 {
   "expo": {
-    "name": "Cojo | Cognitive Journaling Copy",
-    "slug": "cojo-app",
-    "scheme": "cojo-app",
-    "description": "A cognitive journaling app changing the way we think about journaling.",
+    "name": "Motileo Copy",
+    "slug": "motileo-copy",
+    "scheme": "motileo-copy",
+    "description": "App for motileo.com",
     "privacy": "unlisted",
     "platforms": [
       "ios",
-      "android"
+      "android",
+      "web"
     ],
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "default",
     "icon": "./assets/images/icon.png",
     "splash": {
       "image": "./assets/images/splash.png",
       "resizeMode": "cover",
-      "backgroundColor": "#FFFFFF"
+      "backgroundColor": "#171B26"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -24,13 +25,19 @@
       "bundleIdentifier": "com.draftbit.untitledapp",
       "supportsTablet": false,
       "buildNumber": "1.0.0",
-      "infoPlist": {},
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "remote-notification"
+        ]
+      },
       "usesIcloudStorage": false
     },
     "android": {
       "versionCode": 1,
-      "package": "com.getcojo.app",
-      "permissions": []
+      "package": "com.draftbit.untitledapp",
+      "permissions": [
+        "VIBRATE"
+      ]
     },
     "web": {
       "themeColor": "#000000"

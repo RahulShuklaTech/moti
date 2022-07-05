@@ -8,55 +8,16 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import theme from './themes/DraftbitTheme.js';
 import LinkingConfiguration from './LinkingConfiguration.js';
 
-import AboutthisAppScreen from './screens/AboutthisAppScreen';
-import AfternoonFocusScreen from './screens/AfternoonFocusScreen';
-import AppSettingsScreen from './screens/AppSettingsScreen';
-import CarddesignScreen from './screens/CarddesignScreen';
-import DifficultThoughtsScreen from './screens/DifficultThoughtsScreen';
-import EveningScreen from './screens/EveningScreen';
-import ExerciseFinishGuidedScreen from './screens/ExerciseFinishGuidedScreen';
-import ExerciseFinishRescueScreen from './screens/ExerciseFinishRescueScreen';
-import ExerciseFinishScreen from './screens/ExerciseFinishScreen';
-import GuidedExerciseInputScreen from './screens/GuidedExerciseInputScreen';
-import GuidedExerciseInputTodayScreen from './screens/GuidedExerciseInputTodayScreen';
-import GuidedExerciseIntroScreen from './screens/GuidedExerciseIntroScreen';
-import GuidedHabitsScreen from './screens/GuidedHabitsScreen';
-import GuidedIdeasScreen from './screens/GuidedIdeasScreen';
-import GuidedJourneyScreen from './screens/GuidedJourneyScreen';
-import GuidedPromptsScreen from './screens/GuidedPromptsScreen';
-import GuidedReflectandExploreScreen from './screens/GuidedReflectandExploreScreen';
-import GuidedRescueSessionsScreen from './screens/GuidedRescueSessionsScreen';
-import GuidedScreen_JnaPRJD2 from './screens/GuidedScreen_JnaPRJD2';
-import GuidedThemePromptsScreen from './screens/GuidedThemePromptsScreen';
-import JourneyScreen from './screens/JourneyScreen';
-import LogActivityScreen from './screens/LogActivityScreen';
-import LogMoodGuidedScreen_PyPrkSTM from './screens/LogMoodGuidedScreen_PyPrkSTM';
-import LogMoodGuidedoldScreen from './screens/LogMoodGuidedoldScreen';
-import LogMoodScreen from './screens/LogMoodScreen';
-import LoginScreen from './screens/LoginScreen';
-import MorningPractiseScreen from './screens/MorningPractiseScreen';
-import Onboard1Screen from './screens/Onboard1Screen';
-import Onboard2Screen from './screens/Onboard2Screen';
-import Onboard3Screen from './screens/Onboard3Screen';
-import Onboard4Screen from './screens/Onboard4Screen';
-import Onboard5Screen from './screens/Onboard5Screen';
-import Onboard6Screen from './screens/Onboard6Screen';
-import Onboard7Screen from './screens/Onboard7Screen';
-import Onboard8Screen from './screens/Onboard8Screen';
-import PasswordresetScreen from './screens/PasswordresetScreen';
+import AddpostScreen from './screens/AddpostScreen';
+import AddsaleScreen from './screens/AddsaleScreen';
+import DashboardScreen from './screens/DashboardScreen';
+import EmailinputpaswordlessScreen from './screens/EmailinputpaswordlessScreen';
+import GameScreen from './screens/GameScreen';
+import LoggedinsuccessfullyScreen from './screens/LoggedinsuccessfullyScreen';
+import OTPfromemailScreen from './screens/OTPfromemailScreen';
+import OverviewScreen from './screens/OverviewScreen';
 import ProfileScreen from './screens/ProfileScreen';
-import PromptInputGuidedScreen from './screens/PromptInputGuidedScreen';
-import PromptInputTodayScreen from './screens/PromptInputTodayScreen';
-import RescueExerciseInputScreen from './screens/RescueExerciseInputScreen';
-import SOSinputScreen from './screens/SOSinputScreen';
-import SetFavouritesScreen from './screens/SetFavouritesScreen';
-import SettingsScreen from './screens/SettingsScreen';
-import SignupScreen from './screens/SignupScreen';
-import TodayScreen from './screens/TodayScreen';
-import YourdatastudioScreen from './screens/YourdatastudioScreen';
-import Yourjournalingall2Screen from './screens/Yourjournalingall2Screen';
-import YourjournalingtodayScreen from './screens/YourjournalingtodayScreen';
-import Yourjournalingweek2Screen from './screens/Yourjournalingweek2Screen';
+import SalesScreen from './screens/SalesScreen';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -100,363 +61,176 @@ function Placeholder() {
     </View>
   );
 }
-function TodayNavigator() {
-  return (
-    <Stack.Navigator headerMode="none" initialRouteName="TodayScreen">
-      <Stack.Screen
-        name="MorningPractiseScreen"
-        component={MorningPractiseScreen}
-        options={{ title: 'Morning Practise' }}
-      />
-      <Stack.Screen
-        name="LogMoodScreen"
-        component={LogMoodScreen}
-        options={{ title: 'Log Mood' }}
-      />
-      <Stack.Screen
-        name="LogActivityScreen"
-        component={LogActivityScreen}
-        options={{ title: 'Log Activity' }}
-      />
-      <Stack.Screen
-        name="AfternoonFocusScreen"
-        component={AfternoonFocusScreen}
-        options={{ title: 'Afternoon Focus' }}
-      />
-      <Stack.Screen
-        name="EveningScreen"
-        component={EveningScreen}
-        options={{ title: 'Evening ' }}
-      />
-      <Stack.Screen
-        name="TodayScreen"
-        component={TodayScreen}
-        options={{ title: 'Today' }}
-      />
-      <Stack.Screen
-        name="GuidedExerciseInputTodayScreen"
-        component={GuidedExerciseInputTodayScreen}
-        options={{ title: 'Guided Exercise Input Today' }}
-      />
-      <Stack.Screen
-        name="ExerciseFinishScreen"
-        component={ExerciseFinishScreen}
-        options={{ title: 'Exercise Finish' }}
-      />
-      <Stack.Screen
-        name="PromptInputTodayScreen"
-        component={PromptInputTodayScreen}
-        options={{ title: 'Prompt Input Today' }}
-      />
-    </Stack.Navigator>
-  );
-}
-
-function GuidedNavigator() {
-  return (
-    <Stack.Navigator headerMode="none" initialRouteName="GuidedScreen_JnaPRJD2">
-      <Stack.Screen
-        name="ExerciseFinishGuidedScreen"
-        component={ExerciseFinishGuidedScreen}
-        options={{ title: 'Exercise Finish Guided' }}
-      />
-      <Stack.Screen
-        name="GuidedExerciseIntroScreen"
-        component={GuidedExerciseIntroScreen}
-        options={{ title: 'Guided Exercise Intro' }}
-      />
-      <Stack.Screen
-        name="GuidedExerciseInputScreen"
-        component={GuidedExerciseInputScreen}
-        options={{ title: 'Guided Exercise Input' }}
-      />
-      <Stack.Screen
-        name="GuidedScreen_JnaPRJD2"
-        component={GuidedScreen_JnaPRJD2}
-        options={{ title: 'Guided' }}
-      />
-      <Stack.Screen
-        name="GuidedReflectandExploreScreen"
-        component={GuidedReflectandExploreScreen}
-        options={{ title: 'Guided Reflect and Explore' }}
-      />
-      <Stack.Screen
-        name="GuidedHabitsScreen"
-        component={GuidedHabitsScreen}
-        options={{ title: 'Guided Habits' }}
-      />
-      <Stack.Screen
-        name="GuidedJourneyScreen"
-        component={GuidedJourneyScreen}
-        options={{ title: 'Guided Journey' }}
-      />
-      <Stack.Screen
-        name="GuidedIdeasScreen"
-        component={GuidedIdeasScreen}
-        options={{ title: 'Guided Ideas' }}
-      />
-      <Stack.Screen
-        name="GuidedThemePromptsScreen"
-        component={GuidedThemePromptsScreen}
-        options={{ title: 'Guided Theme Prompts' }}
-      />
-      <Stack.Screen
-        name="PromptInputGuidedScreen"
-        component={PromptInputGuidedScreen}
-        options={{ title: 'Prompt Input Guided' }}
-      />
-      <Stack.Screen
-        name="LogMoodGuidedScreen_PyPrkSTM"
-        component={LogMoodGuidedScreen_PyPrkSTM}
-        options={{ title: 'Log Mood Guided' }}
-      />
-      <Stack.Screen
-        name="GuidedPromptsScreen"
-        component={GuidedPromptsScreen}
-        options={{ title: 'Guided Prompts' }}
-      />
-      <Stack.Screen
-        name="DifficultThoughtsScreen"
-        component={DifficultThoughtsScreen}
-        options={{ title: 'Difficult Thoughts' }}
-      />
-      <Stack.Screen
-        name="LogMoodGuidedoldScreen"
-        component={LogMoodGuidedoldScreen}
-        options={{ title: 'Log Mood Guided old' }}
-      />
-      <Stack.Screen
-        name="CarddesignScreen"
-        component={CarddesignScreen}
-        options={{ title: '4 card design' }}
-      />
-    </Stack.Navigator>
-  );
-}
-
-function YourJournaling() {
+function OverviewStack() {
   return (
     <Stack.Navigator
+      mode="card"
       headerMode="none"
-      initialRouteName="YourjournalingtodayScreen"
       screenOptions={{
-        animationEnabled: false,
+        headerTransparent: false,
       }}
     >
       <Stack.Screen
-        name="Yourjournalingweek2Screen"
-        component={Yourjournalingweek2Screen}
-        options={{ title: 'Your journaling week 2' }}
-      />
-      <Stack.Screen
-        name="Yourjournalingall2Screen"
-        component={Yourjournalingall2Screen}
-        options={{ title: 'Your journaling all 2' }}
-      />
-      <Stack.Screen
-        name="YourjournalingtodayScreen"
-        component={YourjournalingtodayScreen}
-        options={{ title: 'Your journaling today' }}
+        name="OverviewScreen"
+        component={OverviewScreen}
+        options={{
+          headerTransparent: false,
+          gestureEnabled: true,
+          animationEnabled: true,
+          title: 'Overview',
+        }}
       />
     </Stack.Navigator>
   );
 }
 
-function Rescue() {
+function SalesStack() {
   return (
     <Stack.Navigator headerMode="none">
       <Stack.Screen
-        name="RescueExerciseInputScreen"
-        component={RescueExerciseInputScreen}
-        options={{ title: 'Rescue Exercise Input' }}
-      />
-      <Stack.Screen
-        name="ExerciseFinishRescueScreen"
-        component={ExerciseFinishRescueScreen}
-        options={{ title: 'Exercise Finish Rescue' }}
-      />
-      <Stack.Screen
-        name="GuidedRescueSessionsScreen"
-        component={GuidedRescueSessionsScreen}
-        options={{ title: 'Guided Rescue Sessions' }}
+        name="SalesScreen"
+        component={SalesScreen}
+        options={{ title: 'Sales' }}
       />
     </Stack.Navigator>
   );
 }
 
-function Tabs() {
+function DashboardStack() {
+  return (
+    <Stack.Navigator headerMode="none">
+      <Stack.Screen
+        name="DashboardScreen"
+        component={DashboardScreen}
+        options={{ title: 'Dashboard' }}
+      />
+    </Stack.Navigator>
+  );
+}
+
+function GameStack() {
+  return (
+    <Stack.Navigator>
+      <Stack.Screen
+        name="GameScreen"
+        component={GameScreen}
+        options={{ headerTitle: 'Battles', title: 'Game' }}
+      />
+    </Stack.Navigator>
+  );
+}
+
+function Main() {
   return (
     <Tab.Navigator
-      initialRouteName="TodayNavigator"
+      initialRouteName="OverviewStack"
       tabBarOptions={{
-        showLabel: true,
-        showIcon: true,
-        allowFontScaling: true,
-        keyboardHidesTabBar: true,
+        showLabel: false,
         labelPosition: 'below-icon',
-        activeTintColor: theme.colors.primary,
-        inactiveTintColor: theme.colors.light,
-        labelStyle: theme.typography.custom113,
+        inactiveTintColor: theme.colors.strong,
+        labelStyle: theme.typography.custom14,
         style: {
           backgroundColor: theme.colors.background,
-          borderTopColor: theme.colors.divider,
+          borderTopColor: null,
         },
       }}
+      lazy={false}
+      backBehavior="none"
     >
       <Tab.Screen
-        name="TodayNavigator"
-        component={TodayNavigator}
+        name="OverviewStack"
+        component={OverviewStack}
         options={{
           tabBarIcon: ({ focused, color }) => (
             <Icon
-              name="MaterialCommunityIcons/white-balance-sunny"
+              name="AntDesign/home"
               size={25}
-              color={focused ? theme.colors.primary : theme.colors.light}
+              color={focused ? theme.colors.primary : color}
             />
           ),
-          tabBarLabel: 'Today',
-          title: 'TodayNavigator',
+          title: 'Overview Stack',
         }}
       />
       <Tab.Screen
-        name="Rescue"
-        component={Rescue}
+        name="DashboardStack"
+        component={DashboardStack}
         options={{
           tabBarIcon: ({ focused, color }) => (
             <Icon
-              name="Foundation/heart"
+              name="AntDesign/dashboard"
               size={25}
-              color={focused ? theme.colors.primary : theme.colors.light}
+              color={focused ? theme.colors.primary : color}
             />
           ),
-          tabBarLabel: 'Rescue',
-          title: 'Rescue',
+          title: 'Dashboard Stack',
         }}
       />
       <Tab.Screen
-        name="GuidedNavigator"
-        component={GuidedNavigator}
+        name="AddsaleScreen"
+        component={AddsaleScreen}
         options={{
+          title: 'Add sale',
           tabBarIcon: ({ focused, color }) => (
             <Icon
-              name="Ionicons/ios-compass-sharp"
+              name="AntDesign/pluscircleo"
               size={25}
-              color={focused ? theme.colors.primary : theme.colors.light}
+              color={focused ? theme.colors.primary : color}
             />
           ),
-          tabBarLabel: 'Guided',
-          title: 'Guided Navigator',
         }}
       />
       <Tab.Screen
-        name="YourJournaling"
-        component={YourJournaling}
+        name="SalesStack"
+        component={SalesStack}
         options={{
           tabBarIcon: ({ focused, color }) => (
             <Icon
-              name="Ionicons/ios-book"
+              name="MaterialIcons/attach-money"
               size={25}
-              color={focused ? theme.colors.primary : theme.colors.light}
+              color={focused ? theme.colors.primary : color}
             />
           ),
-          tabBarLabel: 'Journal',
-          title: 'Your Journaling',
+          title: 'Sales Stack',
+        }}
+      />
+      <Tab.Screen
+        name="GameStack"
+        component={GameStack}
+        options={{
+          tabBarIcon: ({ focused, color }) => (
+            <Icon
+              name="MaterialCommunityIcons/sword-cross"
+              size={25}
+              color={focused ? theme.colors.primary : color}
+            />
+          ),
+          title: 'Game Stack',
         }}
       />
     </Tab.Navigator>
   );
 }
 
-function StackNavigator() {
+function Auth() {
   return (
     <Stack.Navigator
       headerMode="none"
-      initialRouteName="LoginScreen"
-      screenOptions={{
-        animationEnabled: false,
-      }}
+      initialRouteName="EmailinputpaswordlessScreen"
     >
       <Stack.Screen
-        name="PasswordresetScreen"
-        component={PasswordresetScreen}
-        options={{ title: 'Password reset' }}
+        name="LoggedinsuccessfullyScreen"
+        component={LoggedinsuccessfullyScreen}
+        options={{ title: 'logged in successfully' }}
       />
       <Stack.Screen
-        name="Onboard2Screen"
-        component={Onboard2Screen}
-        options={{ title: 'Onboard 2' }}
+        name="EmailinputpaswordlessScreen"
+        component={EmailinputpaswordlessScreen}
+        options={{ title: 'Email input paswordless' }}
       />
       <Stack.Screen
-        name="Onboard1Screen"
-        component={Onboard1Screen}
-        options={{ title: 'Onboard 1' }}
-      />
-      <Stack.Screen
-        name="Onboard3Screen"
-        component={Onboard3Screen}
-        options={{ title: 'Onboard 3' }}
-      />
-      <Stack.Screen
-        name="LoginScreen"
-        component={LoginScreen}
-        options={{ title: 'Login ' }}
-      />
-      <Stack.Screen
-        name="SignupScreen"
-        component={SignupScreen}
-        options={{ title: 'Signup' }}
-      />
-      <Stack.Screen
-        name="Onboard8Screen"
-        component={Onboard8Screen}
-        options={{ title: 'Onboard 8' }}
-      />
-      <Stack.Screen
-        name="Onboard7Screen"
-        component={Onboard7Screen}
-        options={{ title: 'Onboard 7' }}
-      />
-      <Stack.Screen
-        name="Onboard6Screen"
-        component={Onboard6Screen}
-        options={{ title: 'Onboard 6' }}
-      />
-      <Stack.Screen
-        name="Onboard5Screen"
-        component={Onboard5Screen}
-        options={{ title: 'Onboard 5' }}
-      />
-      <Stack.Screen
-        name="Onboard4Screen"
-        component={Onboard4Screen}
-        options={{ title: 'Onboard 4' }}
-      />
-    </Stack.Navigator>
-  );
-}
-
-function ProfileStack() {
-  return (
-    <Stack.Navigator headerMode="none">
-      <Stack.Screen
-        name="YourdatastudioScreen"
-        component={YourdatastudioScreen}
-        options={{ title: 'Your data studio' }}
-      />
-      <Stack.Screen
-        name="AboutthisAppScreen"
-        component={AboutthisAppScreen}
-        options={{ title: 'About this App' }}
-      />
-      <Stack.Screen
-        name="ProfileScreen"
-        component={ProfileScreen}
-        options={{ title: 'Profile' }}
-      />
-      <Stack.Screen
-        name="SetFavouritesScreen"
-        component={SetFavouritesScreen}
-        options={{ title: 'Set Favourites' }}
+        name="OTPfromemailScreen"
+        component={OTPfromemailScreen}
+        options={{ title: 'OTP from email' }}
       />
     </Stack.Navigator>
   );
@@ -466,26 +240,28 @@ export default function RootAppNavigator() {
   return (
     <NavigationContainer linking={LinkingConfiguration}>
       <Stack.Navigator
+        mode="card"
         headerMode="none"
-        initialRouteName="StackNavigator"
+        initialRouteName="Auth"
         screenOptions={{
+          cardStyle: {
+            backgroundColor: theme.colors.background,
+          },
+          headerTintColor: theme.colors.strong,
           headerTransparent: false,
-          animationEnabled: false,
+          cardShadowEnabled: true,
+          cardOverlayEnabled: true,
+          animationEnabled: true,
+          headerTitleStyle: theme.typography.custom17,
         }}
       >
         <Stack.Screen
-          name="SettingsScreen"
-          component={SettingsScreen}
-          options={{ title: 'Settings' }}
+          name="AddpostScreen"
+          component={AddpostScreen}
+          options={{ title: 'Add post' }}
         />
-        <Stack.Screen
-          name="AppSettingsScreen"
-          component={AppSettingsScreen}
-          options={{ title: 'App Settings' }}
-        />
-        <Stack.Screen name="Tabs" component={Tabs} />
-        <Stack.Screen name="StackNavigator" component={StackNavigator} />
-        <Stack.Screen name="ProfileStack" component={ProfileStack} />
+        <Stack.Screen name="Main" component={Main} />
+        <Stack.Screen name="Auth" component={Auth} />
       </Stack.Navigator>
     </NavigationContainer>
   );

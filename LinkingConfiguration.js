@@ -20,38 +20,35 @@ const linking = {
   prefixes: [prefix],
   config: {
     screens: {
-      Tabs: {
+      Main: {
         screens: {
-          TodayNavigator: {
+          OverviewStack: {
             screens: {},
           },
-          GuidedNavigator: {
+          SalesStack: {
             screens: {},
           },
-          YourJournaling: {
+          DashboardStack: {
             screens: {},
           },
-          Rescue: {
+          GameStack: {
             screens: {},
           },
         },
-        TodayNavigator: {
+        OverviewStack: {
           screens: {},
         },
-        GuidedNavigator: {
+        SalesStack: {
           screens: {},
         },
-        YourJournaling: {
+        DashboardStack: {
           screens: {},
         },
-        Rescue: {
+        GameStack: {
           screens: {},
         },
       },
-      StackNavigator: {
-        screens: {},
-      },
-      ProfileStack: {
+      Auth: {
         screens: {},
       },
     },

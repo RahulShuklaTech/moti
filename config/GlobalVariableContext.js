@@ -4,28 +4,11 @@ import AppLoading from 'expo-app-loading';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const DeviceVariables = {
-  XANO_AUTHORIZATION_HEADER: 'THIS SHOULD BE CHANGED',
-  setup: 'THIS SHOULD BE CHANGED',
-  SIGNUP_ERROR: 'THIS SHOULD BE CHANGED',
-  plan_today: 'THIS SHOULD BE CHANGED',
-  morning_check_in: 'THIS SHOULD BE CHANGED',
-  daily_intention: 'THIS SHOULD BE CHANGED',
-  daily_prompt: 'THIS SHOULD BE CHANGED',
-  afternoon_check_in: 'THIS SHOULD BE CHANGED',
-  midday_gratitude: 'THIS SHOULD BE CHANGED',
-  reflect_on_the_day: 'THIS SHOULD BE CHANGED',
-  evening_gratitude: 'THIS SHOULD BE CHANGED',
-  plan_for_tomorrow: 'THIS SHOULD BE CHANGED',
-  morning_gratitude: 'THIS SHOULD BE CHANGED',
+  id_token: 'THIS SHOULD BE CHANGED',
+  AUTHORIZATION_HEADER: 'THIS SHOULD BE CHANGED',
+  imageUrl: 'THIS SHOULD BE CHANGED',
 };
-const AppVariables = {
-  visible: 'THIS SHOULD BE CHANGED',
-  airTable: 'THIS SHOULD BE CHANGED',
-  LOGIN_ERROR: 'THIS SHOULD BE CHANGED',
-  visibleActionSheet: 'THIS SHOULD BE CHANGED',
-  confirmdelete: 'THIS SHOULD BE CHANGED',
-  deleteid: 'THIS SHOULD BE CHANGED',
-};
+const AppVariables = { visible: 'THIS SHOULD BE CHANGED' };
 const GlobalVariableContext = React.createContext();
 const GlobalVariableUpdater = React.createContext();
 
